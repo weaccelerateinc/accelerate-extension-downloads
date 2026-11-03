@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "release_id": "accelerate-extension-0.0.0.1",
+  "status": "approved",
+  "extension_version": "0.0.0.1",
+  "artifact": {
+    "format": "zip",
+    "sha256": "65574cbb27ab344687963f72a136f2653551b57458b284e486946b27699099c8",
+    "bytes": 29397270
+  },
+  "bridge": {
+    "protocol": "accelerate_extension_bridge_v1",
+    "sha256": "1ba039eb78a5b18bfab4486c7835f1ac188b96682ec67c92bfef889c763811a6",
+    "runtime_reporting": "legacy_pinned_artifact"
+  },
+  "capabilities": {
+    "manual_card_fill": true,
+    "document_bound_single_use": true,
+    "autosave_disabled": true,
+    "automatic_submit": false,
+    "maximum_retention_ms": 480000
+  },
+  "compatibility": {
+    "sdk_versions": [
+      "0.10.0",
+      "0.10.1",
+      "0.10.2",
+      "0.10.3",
+      "0.10.4",
+      "0.11.0",
+      "0.12.0"
+    ],
+    "executor_contract": "accelerate_manual_checkout_v1"
+  },
+  "qualifications": [
+    {
+      "provider": "browser_use",
+      "scope": "sandbox_demo_normal_fill_review_cancel",
+      "evidence": "docs/evidence/browser-use-wallet-fill-review-2026-10-27.json"
+    }
+  ]
+}
